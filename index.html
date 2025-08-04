@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./utility.css">
-    <title>Document</title>
+    <title>Spotify - Web Player: Music for everyone</title>
 </head>
 
 <body>
     <div class="container flex bg-black">
-        <div class="left border bg-grey">
-            <div class="home bg-grey rounded">
+        <div class="left ">
+            <div class="home bg-grey rounded m-1 p-1">
                 <div class="logo invert"><img src="LOGO.svg" alt="" srcset=""></div>
                 <ul>
                     <li><img class="invert" src="home.svg" alt="home">HOME</li>
@@ -20,15 +20,98 @@
                 </ul>
             </div>
 
-            <div class="library bg-grey rounded">
-                
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert" src="./playlist.svg" alt="" srcset="">
+                    <h2>
+                        Your Library
+                    </h2>
+                </div>
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="right bg-grey rounded">
+            <div class="header">
+                <div class="nav">
+                    <img width="40" class="invert hamburger" src="img/hamburger.svg" alt="">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15 6L9.70711 11.2929C9.37377 11.6262 9.20711 11.7929 9.20711 12C9.20711 12.2071 9.37377 12.3738 9.70711 12.7071L15 18"
+                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9 18L14.2929 12.7071C14.6262 12.3738 14.7929 12.2071 14.7929 12C14.7929 11.7929 14.6262 11.6262 14.2929 11.2929L9 6"
+                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="buttons">
+                    <button class="signupbtn">SignUp</button>
+                    <button class="loginbtn">Login</button>
+                </div>
+            </div>
+
+            <div class="spotifyplaylists">
+                <h1>
+                    Spotify Playlists
+                </h1>
+
+                <div class="cardcontainer">
+                    <div class="card">
+                        <div class="play">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path
+                                d="M320 112C434.9 112 528 205.1 528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112zM320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM276.5 211.5C269.1 207 259.8 206.8 252.2 211C244.6 215.2 240 223.3 240 232L240 408C240 416.7 244.7 424.7 252.3 428.9C259.9 433.1 269.1 433 276.6 428.4L420.6 340.4C427.7 336 432.1 328.3 432.1 319.9C432.1 311.5 427.7 303.8 420.6 299.4L276.6 211.4zM362 320L288 365.2L288 274.8L362 320z" />
+                            </svg> -->
+                        </div>
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab67616d00001e0203628829456a6d3f476ce12e"
+                            data-testid="card-image" alt=""
+                            class="mMx2LUixlnN_Fu45JpFB yMQTWVwLJ5bV8VGiaqU3 yOKoknIYYzAE90pe7_SE Yn2Ei5QZn19gria6LjZj">
+                        <h2>happy Hits</h2>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab67616d00001e0203628829456a6d3f476ce12e"
+                            data-testid="card-image" alt=""
+                            class="mMx2LUixlnN_Fu45JpFB yMQTWVwLJ5bV8VGiaqU3 yOKoknIYYzAE90pe7_SE Yn2Ei5QZn19gria6LjZj">
+                        <h2>happy Hits</h2>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                </div>
+
+                <div class="playbar">
+
+                    <div class="songinfo">
+
+                    </div>
+                    
+                    <div class="songbuttons">
+                        <img src="./prevsong.svg" alt="" srcset="">
+                        <img src="./play.svg" alt="" srcset="">
+                        <img src="./nextsong.svg" alt="" srcset="">
+                    </div>
+
+                    <div class="songtime">
+                        
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="right border">
-
-        </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
